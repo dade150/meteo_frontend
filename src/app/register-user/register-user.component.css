@@ -1,0 +1,47 @@
+.form-container {
+  background: rgba(12, 34, 100, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-outline {
+  position: relative;
+  margin: 1rem .4rem;
+}
+
+#submit_button {
+  background-color: rgba(60, 20, 140, 0.3);
+  color: white;
+}
+
+#submit_button:hover {
+  background: rgba(60, 20, 140, 0.8);
+  transition: 1s;
+}
+
+.form-outline label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0 0.5rem;
+  background: rgba(12, 34, 100, 0.5);
+  transition: 0.3s;
+  border-radius: 15px;
+  color: rgba(255, 255, 255);
+}
+
+.form-outline input:focus ~ label,
+.form-outline input:not(:placeholder-shown) ~ label {
+  top: -0.75rem;
+  left: 0.5rem;
+  background: rgba(60, 20, 140, 0.8);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255);
+  border-radius: 15px;
+}
+
+a {
+  color: rgba(60, 20, 140, 0.8);
+}
